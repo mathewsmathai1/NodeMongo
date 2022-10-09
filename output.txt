@@ -1,0 +1,109 @@
+connected
+[
+  '/usr/bin/node',
+  '/home/ubuntu/mongorun/index.js',
+  'createUser',
+  'shubham',
+  'Mathews',
+  '100',
+  '10-20',
+  '50-71'
+]
+file: index.js ~ line 29 ~ appId shubham
+file: index.js ~ line 31 ~ userId Mathews
+file: index.js ~ line 33 ~ numberOfGroups 100
+file: index.js ~ line 35 ~ mutedChatGroups [ '10', '20' ]
+file: index.js ~ line 37 ~ mutedCallGroups [ '50', '71' ]
+createUser: 92.922ms
+################################################################
+connected
+[
+  '/usr/bin/node',
+  '/home/ubuntu/mongorun/index.js',
+  'addMemberToGroup',
+  'shubham',
+  'Mathews,Mathews1',
+  'TestGroup000000000001'
+]
+file: index.js ~ line 180 ~ appId shubham
+file: index.js ~ line 182 ~ userList [ 'Mathews', 'Mathews1' ]
+file: index.js ~ line 184 ~ groupId TestGroup000000000001
+addMemberToGroup: 44.821ms
+################################################################
+connected
+[
+  '/usr/bin/node',
+  '/home/ubuntu/mongorun/index.js',
+  'messageSentInGroup',
+  'shubham',
+  'Mathews',
+  'TestGroup000000000001'
+]
+[
+  {
+    _id: 'shubham_Mathews1',
+    appId: 'shubham',
+    uid: 'Mathews1',
+    fcmTokens: {
+      USERuvwxyz00001_AUTH16633494948085a924b216f77ec04d0be2ba5a2e00001: [Array],
+      USERuvwxyz00001_AUTH16633494948085a924b216f77ec04d0be2ba5a2e00002: [Array],
+      USERuvwxyz00001_AUTH16633494948085a924b216f77ec04d0be2ba5a2e00003: [Array],
+      USERuvwxyz00001_AUTH16633494948085a924b216f77ec04d0be2ba5a2e00004: [Array],
+      USERuvwxyz00001_AUTH16633494948085a924b216f77ec04d0be2ba5a2e00005: [Array],
+      USERuvwxyz00001_AUTH16633494948085a924b216f77ec04d0be2ba5a2e00006: [Array],
+      USERuvwxyz00001_AUTH16633494948085a924b216f77ec04d0be2ba5a2e00007: [Array],
+      USERuvwxyz00001_AUTH16633494948085a924b216f77ec04d0be2ba5a2e00008: [Array],
+      USERuvwxyz00001_AUTH16633494948085a924b216f77ec04d0be2ba5a2e00009: [Array],
+      USERuvwxyz00001_AUTH16633494948085a924b216f77ec04d0be2ba5a2e00010: [Array],
+      USERuvwxyz00001_AUTH16633494948085a924b216f77ec04d0be2ba5a2e00011: [Array],
+      USERuvwxyz00001_AUTH16633494948085a924b216f77ec04d0be2ba5a2e00012: [Array],
+      USERuvwxyz00001_AUTH16633494948085a924b216f77ec04d0be2ba5a2e00013: [Array],
+      USERuvwxyz00001_AUTH16633494948085a924b216f77ec04d0be2ba5a2e00014: [Array],
+      USERuvwxyz00001_AUTH16633494948085a924b216f77ec04d0be2ba5a2e00015: [Array]
+    },
+    settings: { chat: [Object], call: [Object] },
+    __v: 0
+  }
+]
+messageSentInGroup: 51.837ms
+################################################################
+connected
+[
+  '/usr/bin/node',
+  '/home/ubuntu/mongorun/index.js',
+  'deleteMemberFromGroup',
+  'shubham',
+  'Mathews1',
+  'TestGroup000000000001'
+]
+file: index.js ~ line 238 ~ appId shubham
+file: index.js ~ line 240 ~ uid [ 'Mathews1' ]
+file: index.js ~ line 242 ~ guid TestGroup000000000001
+deleteMemberFromGroup: 70.788ms
+################################################################
+connected
+[
+  '/usr/bin/node',
+  '/home/ubuntu/mongorun/index',
+  'groupIsDeleted',
+  'shubham',
+  'TestGroup000000000001'
+]
+file: index.js ~ line 284 ~ guID TestGroup000000000001
+file: index.js ~ line 283 ~ appID shubham
+{ appIdGuid: 'shubham_TestGroup000000000001' }
+{ uid: 1, _id: 0 }
+groupIsDeleted: 70.923ms
+################################################################
+connected
+[
+  '/usr/bin/node',
+  '/home/ubuntu/mongorun/index',
+  'deleteUser',
+  'shubham',
+  'Mathews1'
+]
+file: index.js ~ line 168 ~ appID shubham
+file: index.js ~ line 170 ~ uid Mathews1
+deleteUser: 58.159ms
+################################################################
